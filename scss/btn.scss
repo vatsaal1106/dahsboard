@@ -1,0 +1,142 @@
+/* =====  Button ===== */
+button:focus {
+    box-shadow: none !important;
+}
+
+button.disabled,
+button:disabled {
+    opacity: .65;
+}
+
+.btn-primary, .fc-button-primary, .btn-group a {
+    text-transform: capitalize;
+    padding: 9px 11px ;
+    // border-radius: 9999px !important;
+    background-color: $blue !important;
+    color: $white !important;
+    border: 1px solid $blue !important;
+    position: relative;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+        0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+
+    &:hover {
+        background-color: darken($color: $white, $amount: 100%) !important;
+        border: 1px solid black !important;
+        color: $white !important;
+    }
+}
+
+.btn-primary.disabled,
+.fc-button-primary:disabled,
+ .btn-group a.disabled,
+.btn-primary:disabled {
+    background-color: $blue ;
+
+    &:hover {
+        background-color: $blue !important;
+        border: 1px solid $blue !important;
+        cursor: not-allowed;
+    }
+}
+
+// white_btn
+.btn-secondary {
+    text-transform: capitalize;
+    padding: 9px 11px ;
+    // border-radius: 9999px !important;
+    border: solid 1px $dark_grey;
+    background-color: $white !important;
+    color: $dark_grey !important;
+    position: relative;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+        0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+
+    &:hover {
+        background-color: darken($color: $white, $amount: 100%) !important;
+        border: solid 1px $black !important;
+        color: #fff !important;
+    }
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    &:hover {
+        border: solid 1px $dark_grey !important;
+        background-color: $white !important;
+        color: $dark_grey !important;
+        cursor: not-allowed;
+    }
+}
+
+.btn-cancel {
+    text-transform: capitalize;
+    padding: 9px 11px ;
+    // border-radius: 9999px !important;
+    border: 1px solid #fff;
+    background-color: $white !important;
+    color: $light_text !important;
+    position: relative;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+        0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+
+    &:hover {
+        background-color: darken($color: $white, $amount: 100%) !important;
+        border: solid 1px $black !important;
+        color: #fff !important;
+    }
+}
+
+.btn-cancel.disabled,
+.btn-cancel:disabled {
+    &:hover {
+        border: 1px solid #fff !important;
+        background-color: $white !important;
+        color: $light_text !important;
+        cursor: not-allowed;
+    }
+}
+
+.btn-danger {
+    text-transform: capitalize;
+    background-color: $red;
+    color: $white;
+    border: 0px;
+    position: relative;
+    padding: 9px 11px ;
+    // border-radius: 9999px !important;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+        0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+
+    &:hover {
+        background-color: darken($color: $white, $amount: 100%);
+    }
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+    &:hover {
+        border: 0px !important;
+        background-color: $red !important;
+        cursor: not-allowed;
+    }
+}
